@@ -1,0 +1,65 @@
+**Application for Sick Leave**
+
+[Your Name]
+[Your Address]
+[City, State, Pin Code]
+[Date]
+
+[Your Supervisor's Name]
+[Your Department]
+[Company Name]
+[Company Address]
+[City, State, Pin Code]
+
+Subject: Application for Sick Leave
+
+Dear [Supervisor's Name],
+
+I am writing to inform you that I will be taking a sick leave from [Date] to [Date] due to [Health Condition/Sickness]. As per the company policy, I am requesting a leave of [Number] days.
+
+I have been experiencing [Symptoms/Health Issues] and need to rest and recover. I will ensure that all my tasks and responsibilities are completed before my leave and make arrangements for coverage during my absence.
+
+I will be available on call if any urgent matters arise during my leave. I will return to work on [Date] and ensure a smooth transition.
+
+Thank you for your understanding and support.
+
+Sincerely,
+Anshul Chauhan
+
+**Leave Application Format:**
+
+Date: ______________________________________
+Name: ______________________________________
+Designation: __________________________________
+Leave Type: Sick Leave
+Leave from: __________________________________
+Leave to: ___________________________________
+Number of Days: _______________________________
+Reason for Leave: ______________________________
+
+**Leave Request Code in Python:**
+```python
+class LeaveRequest:
+    def __init__(self, name, designation, leave_type, leave_from, leave_to, number_of_days, reason_for_leave):
+        self.name = name
+        self.designation = designation
+        self.leave_type = leave_type
+        self.leave_from = leave_from
+        self.leave_to = leave_to
+        self.number_of_days = number_of_days
+        self.reason_for_leave = reason_for_leave
+
+    def __str__(self):
+        return f"Leave Request from {self.name} for {self.number_of_days} days from {self.leave_from} to {self.leave_to} due to {self.reason_for_leave}"
+
+leave_request = LeaveRequest("Anshul Chauhan", "Content Writer", "Sick Leave", "2024-05-22", "2024-05-25", 4, "Health Condition")
+print(leave_request)
+```
+
+**Poem:**
+A leave of absence, I must take,
+To rest and recover, for my own sake.
+A sick leave, to heal and mend,
+To regain my strength, and be my best friend.
+
+Note: This content is for informational purposes only and should not be used without proper modification to suit your specific needs.

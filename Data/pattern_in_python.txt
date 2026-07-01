@@ -1,0 +1,144 @@
+**Pattern Programs in Python**
+
+Here are a few examples of pattern programs in Python:
+
+### 1. Printing a Simple Square Pattern
+```python
+for i in range(5):
+    for j in range(5):
+        print("*", end=" ")
+    print()
+```
+This program will print a simple square pattern of 5x5 asterisks.
+
+### 2. Printing a Right Triangle Pattern
+```python
+for i in range(5):
+    for j in range(i+1):
+        print("*", end=" ")
+    print()
+```
+This program will print a right triangle pattern of asterisks.
+
+### 3. Printing a Diamond Pattern
+```python
+for i in range(5):
+    for j in range(4-i):
+        print(" ", end=" ")
+    for k in range(2*i+1):
+        print("*", end=" ")
+    print()
+
+for i in range(4, 0, -1):
+    for j in range(4-i):
+        print(" ", end=" ")
+    for k in range(2*i-1):
+        print("*", end=" ")
+    print()
+```
+This program will print a diamond pattern of asterisks.
+
+### 4. Printing a Pyramid Pattern
+```python
+for i in range(5):
+    for j in range(4-i):
+        print(" ", end=" ")
+    for k in range(2*i+1):
+        print("*", end=" ")
+    print()
+```
+This program will print a pyramid pattern of asterisks.
+
+### 5. Printing a Mirror Pyramid Pattern
+```python
+for i in range(5):
+    for j in range(2*i+1):
+        print("*", end=" ")
+    for k in range(7-2*i):
+        print(" ", end=" ")
+    print()
+```
+This program will print a mirror pyramid pattern of asterisks.
+
+### 6. Printing a Hollow Square Pattern
+```python
+for i in range(5):
+    for j in range(5):
+        if i == 0 or i == 4 or j == 0 or j == 4:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+```
+This program will print a hollow square pattern of asterisks.
+
+### 7. Printing a Hollow Diamond Pattern
+```python
+for i in range(5):
+    for j in range(4-i):
+        print(" ", end=" ")
+    for k in range(2*i+1):
+        if i == 0 or i == 4 or k == 0 or k == 2*i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+for i in range(4, 0, -1):
+    for j in range(4-i):
+        print(" ", end=" ")
+    for k in range(2*i-1):
+        if i == 4 or k == 0 or k == 2*(4-i):
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+```
+This program will print a hollow diamond pattern of asterisks.
+
+### 8. Printing a Rhombus Pattern
+```python
+for i in range(5):
+    for j in range(5-i):
+        print("* ", end="")
+    for k in range(2*i):
+        print("  ", end="")
+    for l in range(5-i):
+        print("* ", end="")
+    print()
+```
+This program will print a rhombus pattern of asterisks.
+
+### 9. Printing a Hollow Rhombus Pattern
+```python
+for i in range(5):
+    for j in range(5-i):
+        if i == 0 or i == 4 or j == 0 or j == 5-i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    for k in range(2*i):
+        print("  ", end="")
+    for l in range(5-i):
+        if i == 0 or i == 4 or l == 0 or l == 5-i:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+    print()
+```
+This program will print a hollow rhombus pattern of asterisks.
+
+### 10. Printing a Pyramid with Numbers Pattern
+```python
+for i in range(5):
+    for j in range(5-i):
+        print(i+1, end=" ")
+    for k in range(2*i+1):
+        print(" ", end=" ")
+    for l in range(5-i):
+        print(i+1, end=" ")
+    print()
+```
+This program will print a pyramid pattern with numbers.
+
+These are just a few examples of pattern programs in Python. You can modify these programs to print different types of patterns.

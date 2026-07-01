@@ -1,0 +1,34 @@
+# --- Python / virtual env ---
+.venv/
+venv/
+.env
+.env.*
+
+# --- Byte-compiled / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Editor / OS ---
+.vscode/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# --- Misc temp files ---
+tempCodeRunnerFile.py
+
+# --- Local session / browser profiles ---
+amazon_session/
+
+# --- Frontend runtime data (local persisted files) ---
+Frontend/Files/
+
+# --- Generated media / local assets ---
+Data/*.jpg
+Data/*.jpeg
+Data/*.png
+Data/*.gif
+Data/*.mp3
+Data/*.html
+

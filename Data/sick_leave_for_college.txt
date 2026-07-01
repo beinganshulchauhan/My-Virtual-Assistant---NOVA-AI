@@ -1,0 +1,77 @@
+**Application for Sick Leave for College**
+
+[Your Name]
+[Your College ID]
+[College Name]
+[College Address]
+[City, State, Pin Code]
+[Date]
+
+[Your Teacher's Name]
+[Your Department]
+[College Name]
+[College Address]
+[City, State, Pin Code]
+
+Subject: Application for Sick Leave
+
+Dear [Teacher's Name],
+
+I am writing to inform you that I will be taking a sick leave from [Date] to [Date] due to [Health Condition/Sickness]. As per the college policy, I am requesting a leave of [Number] days.
+
+I have been experiencing [Symptoms/Health Issues] and need to rest and recover. I will ensure that all my assignments and tasks are completed before my leave and make arrangements for coverage during my absence.
+
+I will be available on call if any urgent matters arise during my leave. I will return to college on [Date] and ensure a smooth transition.
+
+Thank you for your understanding and support.
+
+Sincerely,
+Anshul Chauhan
+
+**Leave Application Format for College:**
+
+Date: ______________________________________
+Name: ______________________________________
+College ID: __________________________________
+Department: __________________________________
+Leave Type: Sick Leave
+Leave from: __________________________________
+Leave to: ___________________________________
+Number of Days: _______________________________
+Reason for Leave: ______________________________
+
+**Leave Request Code in Python:**
+```python
+class LeaveRequest:
+    def __init__(self, name, college_id, department, leave_type, leave_from, leave_to, number_of_days, reason_for_leave):
+        self.name = name
+        self.college_id = college_id
+        self.department = department
+        self.leave_type = leave_type
+        self.leave_from = leave_from
+        self.leave_to = leave_to
+        self.number_of_days = number_of_days
+        self.reason_for_leave = reason_for_leave
+
+    def __str__(self):
+        return f"Leave Request from {self.name} for {self.number_of_days} days from {self.leave_from} to {self.leave_to} due to {self.reason_for_leave}"
+
+leave_request = LeaveRequest("Anshul Chauhan", "C001", "Computer Science", "Sick Leave", "2024-05-22", "2024-05-25", 4, "Health Condition")
+print(leave_request)
+```
+
+**Poem:**
+A leave of absence, I must take,
+To rest and recover, for my own sake.
+A sick leave, to heal and mend,
+To regain my strength, and be my best friend.
+
+**College Sick Leave Policy:**
+
+1. A student may take a maximum of 5 sick leaves in an academic year.
+2. The student must submit a leave application to the college authorities at least 2 days prior to the leave.
+3. The student must provide a medical certificate from a registered doctor for a sick leave.
+4. The student must complete all their assignments and tasks before taking a sick leave.
+5. The student must make arrangements for coverage during their absence.
+
+Note: This content is for informational purposes only and should not be used without proper modification to suit your specific needs.

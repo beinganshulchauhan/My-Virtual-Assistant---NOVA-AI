@@ -1,0 +1,59 @@
+Here's a simple Python code to print a star pattern:
+
+```
+# Star Pattern Program
+
+# Function to print star pattern
+def print_star_pattern(n):
+    # Loop to print each row of the pattern
+    for i in range(1, n + 1):
+        # Loop to print each star in the row
+        for j in range(1, i + 1):
+            print("* ", end="")
+        # Print a newline after each row
+        print()
+
+# Take user input for the number of rows in the pattern
+n = int(input("Enter the number of rows: "))
+
+# Print the star pattern
+print_star_pattern(n)
+```
+
+This code will ask the user to input the number of rows they want in the star pattern. It will then print a star pattern with the specified number of rows.
+
+Here's an example output for 5 rows:
+
+```
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+```
+
+You can modify the code to print different types of star patterns, such as a diamond shape or a inverted triangle shape.
+
+**Example Use Cases:**
+
+* Printing a diamond shape star pattern:
+```python
+def print_diamond_pattern(n):
+    for i in range(1, n + 1):
+        print(" " * (n - i) + "*" * (2 * i - 1))
+    for i in range(n - 1, 0, -1):
+        print(" " * (n - i) + "*" * (2 * i - 1))
+
+n = 5
+print_diamond_pattern(n)
+```
+
+* Printing an inverted triangle shape star pattern:
+```python
+def print_inverted_triangle_pattern(n):
+    for i in range(1, n + 1):
+        print("* " * i)
+
+n = 5
+print_inverted_triangle_pattern(n)
+```

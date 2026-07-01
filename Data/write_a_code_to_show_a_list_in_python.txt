@@ -1,0 +1,55 @@
+**Displaying a List in Python**
+=====================================
+
+Below is a simple Python code to display a list.
+
+```python
+# List of Countries
+countries = ["India", "USA", "China", "Japan", "Brazil"]
+
+# Display the list
+print("Countries:")
+print(countries)
+
+# Display the list with index
+print("\nCountries with Index:")
+for index, country in enumerate(countries):
+    print(f"{index}. {country}")
+```
+
+**Output:**
+
+```
+Countries:
+['India', 'USA', 'China', 'Japan', 'Brazil']
+
+Countries with Index:
+0. India
+1. USA
+2. China
+3. Japan
+4. Brazil
+```
+
+**Explanation:**
+
+*   We start by defining a list of countries named `countries`.
+*   The `print(countries)` statement displays the entire list.
+*   To display the list with index, we use the `enumerate()` function, which returns a tuple containing a count (from start, which defaults to 0) and the values obtained from iterating over the sequence (`countries`).
+*   We use a `for` loop to iterate over the list and print the index and country name.
+
+**Variations:**
+
+*   **Displaying a subset of the list:** You can use list slicing to display a subset of the list.
+
+    ```python
+print("First three countries:")
+for index, country in enumerate(countries[:3]):
+    print(f"{index}. {country}")
+```
+
+*   **Displaying the list with a custom separator:** You can modify the print statement to display the list with a custom separator.
+
+    ```python
+print(", ".join(countries))
+```

@@ -1,0 +1,110 @@
+**Creating a Sorted List in Python**
+=====================================
+
+Below are a few ways to create a sorted list in Python.
+
+**Method 1: Using the `sort()` method**
+
+```python
+# List of numbers
+numbers = [5, 2, 8, 1, 9]
+
+# Sort the list in ascending order
+numbers.sort()
+
+# Display the sorted list
+print("Sorted list (ascending):")
+print(numbers)
+```
+
+**Output:**
+
+```
+Sorted list (ascending):
+[1, 2, 5, 8, 9]
+```
+
+**Method 2: Using the `sorted()` function**
+
+```python
+# List of numbers
+numbers = [5, 2, 8, 1, 9]
+
+# Sort the list in ascending order
+sorted_numbers = sorted(numbers)
+
+# Display the sorted list
+print("Sorted list (ascending):")
+print(sorted_numbers)
+```
+
+**Output:**
+
+```
+Sorted list (ascending):
+[1, 2, 5, 8, 9]
+```
+
+**Method 3: Sorting in descending order**
+
+```python
+# List of numbers
+numbers = [5, 2, 8, 1, 9]
+
+# Sort the list in descending order
+numbers.sort(reverse=True)
+
+# Display the sorted list
+print("Sorted list (descending):")
+print(numbers)
+```
+
+**Output:**
+
+```
+Sorted list (descending):
+[9, 8, 5, 2, 1]
+```
+
+**Method 4: Sorting a list of custom objects**
+
+```python
+# List of Student objects
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __repr__(self):
+        return f"{self.name}, {self.age}"
+
+students = [
+    Student("John", 20),
+    Student("Alice", 19),
+    Student("Bob", 22)
+]
+
+# Sort the list by age
+students.sort(key=lambda x: x.age)
+
+# Display the sorted list
+print("Sorted list by age:")
+for student in students:
+    print(student)
+```
+
+**Output:**
+
+```
+Sorted list by age:
+Alice, 19
+John, 20
+Bob, 22
+```
+
+**Explanation:**
+
+*   The `sort()` method sorts the list in-place, meaning it modifies the original list.
+*   The `sorted()` function returns a new sorted list without modifying the original list.
+*   You can use the `reverse=True` argument to sort the list in descending order.
+*   To sort a list of custom objects, you need to define a `__repr__` method to provide a string representation of each object, and use the `key` argument to specify the attribute to sort by.
