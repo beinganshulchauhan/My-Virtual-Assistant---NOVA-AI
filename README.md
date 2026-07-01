@@ -13,3 +13,35 @@ Nova AI is an AI-powered assistant project designed to provide intelligent respo
 - 🛠️ Modular and scalable architecture
 
 ## 🏗️ Project Structure
+Nova-AI/
+│
+├── app/
+│ ├── main.py
+│ ├── models/
+│ ├── utils/
+│ └── config/
+│
+├── data/
+│
+├── requirements.txt
+├── .gitignore
+├── README.md
+└── LICENSE
+
+
+## 🛠️ Technologies Used
+
+- Python
+- Artificial Intelligence
+- Machine Learning
+- NLP
+- Deep Learning
+- APIs
+- Vector Database / RAG (if implemented)
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/nova-ai.git
