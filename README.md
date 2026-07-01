@@ -37,11 +37,10 @@ Nova-AI/
 - NLP
 - Deep Learning
 - APIs
-- Vector Database / RAG (if implemented)
 
 ## ⚙️ Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/nova-ai.git
+git clone https://github.com/beinganshulchauhan/My-Virtual-Assistant---NOVA-AI
